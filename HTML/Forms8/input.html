@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input in Forms</title>
+    <style>
+        body{
+            background-color: blueviolet;
+            ;
+            color: yellow;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <button type="submit">Done</button>
+    <hr color="yellow">
+    <form action="/server">
+        <p><label >Enter your Name:
+            <input type="text" id="name" placeholder="Name" autofocus></p>
+        </label>
+        <!-- the above approach is better to avoid writing the code. -->
+        <p> <label for="pass">Enter your Password:</label>
+        <input type="password" id="pass" placeholder="Password" autofocus></p>
+        <p>  <label for="num">Enter the number:</label>
+        <input type="number" id="num" placeholder="number" autofocus></p>
+        <label for="time">Enter the time:</label>
+        <input type="time" id="time" placeholder="Enter the time" autofocus>
+        <label for="color">Enter colour:</label>
+        <input type="color" id="color" placeholder="Enter the color" autofocus>
+        <div> <input type="radio" id="rad" name="gender" value="Male" required>
+        <label for="rad" >Male</label>
+        <input type="radio" id="rad" name="gender" value="Female" required>
+        <label for="rad" >Female</label>
+        
+    </div>
+    <label for="Comment">Enter your comments:</label>
+    <br>
+    <textarea name="Comment" rows="4" cols="40" >Enter your text here-</textarea>
+    <div>
+    <label for="Select">Select an Option from below:</label>
+    <select name="Languages" id="Select">
+        <option value="Java">Java</option>
+        <option value="CPP">C++</option>
+        <option value="Python">Python</option>
+        <option value="SQL">SQL</option>
+    </select>
+</div>
+<button>Submit</button>
+<button>hello</button><br>
+<button type="submit">type1</button><br>
+<button type="button">type2 button</button><br>
+<button type="reset">type3 reset</button>
+<!-- INPUT BUTTON -->
+ <br>
+ <input type="button" value="Click Me">
+ <input type="submit" value="Click here to submit">
+<hr color="yellow">
+    </form>
+</body>
+</html>
